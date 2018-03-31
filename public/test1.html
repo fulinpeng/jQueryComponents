@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./compiled/thumb.js"></script>
+</head>
+<body>
+</body>
+<input type="button" value="点赞">
+<h1>赞：0次​</h1>​
+<script>
+
+    const btn=document.getElementsByTagName('input')[0];
+    const h1=document.getElementsByTagName('h1')[0];
+
+    let praiseBtn=new PraiseButton({
+        target:btn,
+        showNum:h1,
+    });
+    praiseBtn.addClick();
+
+</script>
+</html>

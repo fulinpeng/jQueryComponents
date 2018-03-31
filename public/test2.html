@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./thumb.css">
+    <script src="./compiled/thumb.js"></script>
+</head>
+<body>
+<input type="button" value="添加大拇指">
+<h1></h1>
+<div class="thumb"></div>
+</body>
+<script>
+
+    const thumbBox = document.getElementsByClassName('thumb')[0];
+    const btn=document.getElementsByTagName('input')[0];
+    const showNum=document.getElementsByTagName('h1')[0];
+
+    let thumb = new Thumb({
+        target: thumbBox,
+        showNum: showNum,
+    });
+
+    btn.onclick=()=>{
+        thumb.addThumb();
+        thumb.addClick();
+    }
+</script>
+</html>
