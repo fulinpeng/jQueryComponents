@@ -7,3 +7,6 @@
 # test2.html  ==>  编译后的Thumb子类
 
 # test3.html  ==>  挂载为jQuery的组件
+
+# Karma点赞单元测试
+今天完成。。。
